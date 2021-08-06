@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Novelish</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./grid.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="icon" href="icon 2 (2).ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+  integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+  integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  
+  <script>
+    $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            nav: true,
+            autoPlay: true,
+            autoPlayInterval: 2000,
+        });
+    });
+</script>
+
+<style>
+        body {
+            background: rgb(248, 235, 255);
+            background: linear-gradient(90deg, rgba(248, 235, 255, 1) 0%, rgba(219, 108, 255, 1) 100%);
+        }
+
+        .tp{
+            padding: 20px;
+        }
+</style>
+</head>
+<body>
+
+<nav style="background-color: #600173;" class="navbar navbar-expand-sm fixed-top navbar-dark">
+  <!-- Brand -->
+  <img src="icon 2 (2).ico" width="4%" style="margin-right: 7px;">
+  <a class="navbar-brand" href="#" style="font-family: 'Limelight', cursive;
+  font-size: 37px; ">Novelish</a>
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#review_input">Write a review</a>
+              </li>
+          
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Search
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="search.html">Search Reviews</a>
+                  <a class="dropdown-item" href="book search.html">Search books</a>
+  
+                </div>
+              </li>
+            </ul>
+          </nav>
+<div class="owl-carousel">
+    <!-- <div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div>
+<div> Your Content </div> -->
+    <!-- <div> Your Content </div>
+    <div> Your Content </div> -->
+
+<div style = "margin-top: 80px; "class="grid_5">
+        <img class="img_1" src="./images/book1.jpg" alt="Image 1" />
+    </div>
+    <div class="tp">
+        <div style = "margin-left: 15px; margin-top: 80px;" class="box_1">
+            <h2 >
+               Harry Potter And The Sorcerer's Stone
+            </h2>
+
+            <p style ="margin-left: 15px; color: #600173;" class="text_2 color_4">
+                By
+                <a href="#">J.K Rowling</a>
+                <br />
+                Reviewed by
+                <a href="#">Briony Ellwood</a>
+            </p>
+            <h3 style ="margin-left: 15px;">
+                Summary
+             </h3>
+            <p  style =" font-family: 'Titillium Web', sans-serif; margin-left: 15px;" class="color_6">
+                Harry Potter and the Sorcerer's Stone is a young adult novel by J.K. Rowling.
+                 On his eleventh birthday, orphan Harry Potter receives an acceptance letter
+                  from Hogwarts School of Witchcraft and Wizardry.
+            </p>
+            <h3 style ="margin-left: 15px;">
+                Review
+             </h3>
+            <p  style =" font-family: 'Titillium Web', sans-serif; margin-left: 15px;" class="color_6">
+                Full of sympathetic characters, wildly imaginative situations, and
+                 countless exciting details, the first installment in the series assembles an
+                 unforgettable magical world.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div style ="margin-top: 80px;"class="grid_5">
+        <img class="img_1" src="./images/book2.jpg" alt="Image 1" />
+    </div>
+    <div style="margin-left: 15px;"class="tp">
+        <div class="box_1">
+            <h2 style ="margin-left: 15px; margin-top: 80px;">
+                Matilda
+            </h2>
+
+            <p style ="margin-left: 15px; color: #600173;"class="text_2 color_4">
+                By
+                <a href="#">Roald dahl</a>
+                <br />
+                Reviewed by
+                <a href="#">Maggie Driscoll</a>
+            </p>
+
+            <h3 style ="margin-left: 15px;">
+                Summary
+             </h3>
+            <p style =" font-family: 'Titillium Web', sans-serif;margin-left: 15px;"class="color_6">
+                Matilda is a bright little girl who is very eager to learn. Eventually, 
+                her insensitive parents send her to a school run by Miss Trunchbull.
+                She is a cruel authoritarian that loathes children. Matilda befriends her 
+                school teacher, Miss Honey. she is amazed to see the full extent of Matilda's powers.
+            </p>
+            <h3 style ="margin-left: 15px;">
+                Review
+             </h3>
+            <p style ="font-family: 'Titillium Web', sans-serif; margin-left: 15px; " class="color_6">
+                Roald Dahl takes his readers into the world of one little girl enduring cruelty,
+                 loneliness and an overwhelming power to teach lessons to the adults in her life. 
+             This story is beautifully heartwarming; a surprising mix of humour, 
+             adventure and mystery. 
+            </p>
+        </div>
+    </div>
+    
+    <div style ="margin-top: 80px;" class="grid_5">
+        <img class="img_1" src="./images/books3.png" alt="Image 1" />
+    </div>
+    <div style="width: 90%;" class="grid_7">
+        <div class="box_1">
+            <h2 style ="margin-left: 15px; margin-top: 80px;">
+              Pride and Prejudice
+            </h2>
+
+            <p style ="margin-left: 15px; color: #600173;"class="text_2 color_4">
+                 By
+                <a href="#">Jane Austen</a>
+                <br />
+                Reviewed by
+                <a href="#">Aaron Cobb</a>
+            </p>
+
+            <h3 style ="margin-left: 15px;">
+                Summary
+             </h3>
+            <p style =" font-family: 'Titillium Web', sans-serif; margin-left: 15px;" class="color_6">
+                Pride and Prejudice is set in rural England in the early 19th century, and it
+                 follows the Bennet family.Pride and Prejudice follows the turbulent
+                  relationship between Elizabeth Bennet, the daughter of a country gentleman, 
+                  and Fitzwilliam Darcy, a rich aristocratic landowner. They must overcome the titular 
+                 sins of pride and prejudice in order to fall in love and marry.
+            <h3 style ="margin-left: 15px;">
+                Review
+             </h3>
+            <p style =" font-family: 'Titillium Web', sans-serif; margin-left: 15px;"class="color_6">
+                Pride and prejudice is a classic of English literature, written with 
+                incisive wit and superb character delineation. Jane Austen gives you brave and good 
+                heroes and heroines, despicable villains, a decent dose of comic relief, 
+                a great and complex plot, and plenty of suspense of the 
+                mostly restrained, emotional variety.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="grid_12">
+            <div class="box_2">
+                <div class="box_3">
+                    <h3 class="text_3 color_1">Trending
+                        <span class="text_4">Book Reviews</span>
+                    </h3>
+
+                    <a id="trending_a" href="#trending" class="btn_1 color_4">Click here</a>
+                </div>
+                <div class="box_3">
+                    <h3 class="text_3 color_1">Featured
+                        <span class="text_4">Top Picks</span>
+                    </h3>
+
+                    <a id="top_picks" href="#featured" class="btn_1 color_4">Click here</a>
+                </div>
+                <!-- <div class="box_3">
+                    <h3 class="text_3 color_1">Books
+                        <span class="text_4">This Month</span>
+                    </h3>
+
+
+                    <a id="this_month" href="#" class="btn_1 color_4">Click here</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<br><br>
+<section id="review_input">
+<center>
+    <div id="input_div_message_page">
+        <label style="font-size: 25px; color: white;">Write your review</label>
+        <br><br>
+        <input type="text" id="username" class="form-control" placeholder="Username">
+        <br>
+        <input type="text" id="author_name" class="form-control" placeholder="Author name">
+        <br>
+        <input type="text" id="book_name" class="form-control" placeholder="Book name">
+        <br>
+        <input type="text" id="user_review" class="form-control" placeholder="Your review">
+        <br>
+        <button class="btn btn-info" style="background-color: thistle; color: #600173;" onclick="submit()">Submit</button>
+    </div>
+    </center>
+    </section>
+    <br><br>
+<div id="trending" class="grid_12">
+    <h2 class="header_1 indent_1 color_1">
+        Trending
+        <span>Book Reviews</span>
+    </h2>
+<div class="owl-carousel">
+    <div class="grid_2">
+        <div class="box_4">
+            <div class="img-wrap">
+                <img src="images/book3.jpg" alt="Image 9" />
+            </div>
+            <div class="caption">
+                <h3 style="font-size: 14px;" class="text_5 color_1">
+                    <a href="#">
+                        The Blue Umbrella by Ruskin Bond is a children’s book.  The story is short
+                        and simple but elegantly touches the core aspect of humanity - kindness.
+                         Through Binya Ruskin instills  a sense of kindness among children. 
+                         It is an amazing read for all
+                    </a>
+                </h3>
+
+                <p class="text_6 color_5">
+                    By
+                    <a href="#">Ruskin Bond</a>
+                    <br />
+                    Reviewed by
+                    <a href="#">Emerson Collins</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="grid_2">
+        <div class="box_4">
+            <div class="img-wrap">
+                <img src="images/books2.jpg" alt="Image 9" />
+            </div>
+            <div class="caption">
+                <h3 style="font-size: 14px;" class="text_5 color_1">
+                    <a href="#">
+                        When reading through this book, I found myself completely immersed in the story.
+                         Tolkien does a marvelous job with engaging readers in his story. 
+                         The world he has created is described in such animated detail, 
+                        that nearly anyone can get hooked on his story.
+                    </a>
+                </h3>
+
+                <p class="text_6 color_5">
+                    By
+                    <a href="#">J.R.R Tolkien</a>
+                    <br />
+                    Reviewed by
+                    <a href="#">Mariya Powell</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="grid_2">
+        <div class="box_4">
+            <div class="img-wrap">
+                <img src="images/books1.jpg" alt="Image 9" />
+            </div>
+            <div class="caption">
+                <h3 class="text_5 color_1">
+                    <a href="#">
+                        It is marked by strong performances and endearing characters, Little Women is a relevant 
+                        retelling of a classic bestseller that is as poetic as it is real.
+                    </a>
+                </h3>
+
+                <p class="text_6 color_5">
+                    By
+                    <a href="#">Louisa May Alcott</a>
+                    <br />
+                    Reviewed by
+                    <a href="#">Jessica Smith</a>
+                </p>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<div id="featured" class="stellar-section">
+    <div style="background-color: #852698;" class="stellar-block first">
+        <div class="bg_6 wrap_2">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h2 class="header_1 indent_2 color_2">Featured
+                            <span>Top picks</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid_4">
+                        <div class="box_5">
+                            <div class="img-wrap">
+                                <img src="images/book_1.jpg" alt="Image 10" width="100px" height="150px"/>
+                            </div>
+                            <div class="caption">
+                                <h3 class="text_5 color_2">
+                                    <a href="#">
+                                        Like all great stories, the brilliance of this tale is its ability to not only 
+                                        intimately draw us into the tangled lives of these characters, battered by the
+                                         historical tyrannies of their time, but to use 
+                                        their story as a parable to understand the human narrative as a whole.
+                                    </a>
+                                </h3>
+
+                                <p class="text_6 color_4">
+                                    By
+                                    <a href="#">Charles Dickens</a>
+                                    <br />
+                                    Reviewed by
+                                    <a href="#">Jonah Benitez</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box_5">
+                            <div class="img-wrap">
+                                <img src="images/book_2.jpg" alt="Image 11" width="100px" height="150px"/>
+                            </div>
+                            <div class="caption">
+                                <h3 class="text_5 color_2">
+                                    <a href="#">
+                                        It takes you away to another world which seems so real. The She successfully
+                                         gets hate which eventually turns into sympathy and empathy as well.
+                                    </a>
+                                </h3>
+
+                                <p class="text_6 color_4">
+                                    By
+                                    <a href="#">H. Rider Haggard</a>
+                                    <br />
+                                    Reviewed by
+                                    <a href="#">Abid Quraishi</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box_5">
+                            <div class="img-wrap">
+                                <img src="images/book_4.jpg" alt="Image 12" width="100px" height="150px"/>
+                            </div>
+                            <div class="caption">
+                                <h3 class="text_5 color_2">
+                                    <a href="#">
+                                        This classic adventure brings out the best in the little hobbit at its center: bravery, loyalty, cunning, and the guts to take a stand
+                                         against friends blinded by greed so he can help bring about peace. 
+                                    </a>
+                                </h3>
+
+                                <p class="text_6 color_4">
+                                    By
+                                    <a href="#">J. R. R. Tolkien</a>
+                                    <br />
+                                    Reviewed by
+                                    <a href="#">Jessica Smith</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid_4">
+                        <div class="box_5">
+                            <div class="img-wrap">
+                                <img src="images/book_3.jpg" alt="Image 10" width="100px" height="150px"/>
+                            </div>
+                            <div class="caption">
+                                <h3 class="text_5 color_2">
+                                    <a href="#">
+                                        The story has the comic charm, dramatic tension and psychological 
+                                        intensity of a fairy tale, but it's full of specific wisdom as well
+                                    </a>
+                                </h3>
+
+                                <p class="text_6 color_4">
+                                    By
+                                    <a href="#">Paulo Coelho</a>
+                                    <br />
+                                    Reviewed by
+                                    <a href="#">Maisy Burke</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--DELETED EXTRA CLOSING DIV TAG HERE-->
+
+<!--FOOTER START-->
+<footer class="footer-07">
+    <div class="container">
+        <div style="margin-top: -80px; padding: 25px; border-radius: 30px; background: #52006A;"class="row justify-content-center">
+            <div class="col-xl-12 text-center">
+                <h2 class="footer-heading"><img src="icon 2 (2).ico" width="3.5%" style="margin-right: 7px;">
+                    <a class="logo" href="#" style="font-family: 'Limelight', cursive;
+                    font-size: 30px; ">Novelish</a></h2>
+                <p class="menu">
+              
+                    <a onclick="email()" href="#footer-07">Contact Me</a>
+                </p>
+               
+                 <div id="email_box">
+                </div> 
+                <ul class="ftco-footer-social p-0">
+      <a href="https://twitter.com/Manasvi060" target="_blank"><img src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png"/></a>
+        <a href='https://www.instagram.com/manasvi060/' target="_blank"><img src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png"/></a>
+    </ul>
+   
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <p class="copyright">
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <img src="https://img.icons8.com/ios-glyphs/30/ffffff/like--v1.png"/> by Manasvi Jain
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+<!-- FOOTER END -->
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase.js" integrity="sha512-Vu055j4emuBe1fIHqaR0Xlt7CS62im6abpKxGqJi5FOpiVNsNGEfxh037nX9HKvt3n51nEd8VVabB1ui/SRUiA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase-database.min.js" integrity="sha512-KUzJ1tqJLEOjKAXHxF+b6G+UmxG+big6O30M/EV52xf+j+c8YDFpg1Ha1bgtzbZypVqIsuZlrkOcLt560nf6xQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBuCdqUsoei2qzcBUo62xFsvRKPnrgYjOI",
+    authDomain: "novelish-684fa.firebaseapp.com",
+    databaseURL: "https://novelish-684fa-default-rtdb.firebaseio.com",
+    projectId: "novelish-684fa",
+    storageBucket: "novelish-684fa.appspot.com",
+    messagingSenderId: "670643642627",
+    appId: "1:670643642627:web:4874a397c14e3dea5b0936",
+    measurementId: "G-ZFZM385W36"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ // firebase.analytics();
+ console.log(firebase);
+// firebase.database().ref('BookReviews/'+"Bookname").set({
+//    userName:"MANASVI",
+ //  authorName:"jk rowling",
+  //  review:"amazing book!",
+ //  });
+</script>
+<script src="main.js"></script>
+
+
+</body>
+</html>

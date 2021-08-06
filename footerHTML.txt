@@ -1,0 +1,29 @@
+<footer class="footer-07">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-12 text-center">
+                <h2 class="footer-heading"><img src="icon 2 (2).ico" width="3.5%" style="margin-right: 7px;">
+                    <a class="logo" href="#" style="font-family: 'Limelight', cursive;
+                    font-size: 30px; ">Novelish</a></h2>
+                <p class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>                   
+                    <a href="#">Contact</a>
+                </p>
+                <ul class="ftco-footer-social p-0">
+      
+      <a href='#'><img src="https://img.icons8.com/ios-filled/50/FFFFFF/facebook--v1.png"/></a>
+      <a href='#'><img src="https://img.icons8.com/ios-filled/50/FFFFFF/twitter.png"/></a>
+        <a href='#'><img src="https://img.icons8.com/ios-filled/50/FFFFFF/instagram-new.png"/></a>
+      
+    </ul>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <p class="copyright">
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Made with <img src="https://img.icons8.com/ios-glyphs/30/ffffff/like--v1.png"/> by Manasvi
+            </div>
+        </div>
+    </div>
+</footer>

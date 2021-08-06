@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <title>Novelish</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="icon 2 (2).ico">
+</head>
+
+<body>
+  <style>
+    body {
+      background: rgb(248, 235, 255);
+      background: linear-gradient(90deg, rgba(248, 235, 255, 1) 0%, rgba(219, 108, 255, 1) 100%);
+      margin: 0;
+    }
+  </style>
+
+  <center>
+    <nav style="background-color: #600173; padding-top: 10px; padding-bottom: 10px;"
+      class="navbar navbar-expand-sm fixed-top navbar-dark">
+      <h2 id="home_button" onclick="home()" class="	glyphicon glyphicon-home"
+        style="color: white; float: left; padding-left: 10px;"></h2>
+      <span class="glyphicon glyphicon-search" style="color: white;"> </span>
+      <input id="search_book" type="text" class="well-sm" placeholder="Search by book name" style="width: 40%;">
+
+      <button id="test" class="btn navbar-btn" onclick="search_books()" style="background-color: black;
+          color: white; font-size: 18px;
+           margin-left: 7px;">GO</button>
+    </nav>
+    <script>
+      var input = document.getElementById("search_book");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+         event.preventDefault();
+         document.getElementById("test").click();
+        }
+      });
+      </script>
+    <br>
+    <img id="centre_img" src="images/img1.jpg" class="img-rounded">
+  </center>
+  <div id="main"></div>
+
+  <!-- <div class="card stretched-link" style="width:55%; background-color: #600173; padding: 25px; border-radius: 25px; box-shadow: 10px 10px 5px #52006A; margin-left: 300px;">
+    <img class="card-img-top" src="" alt="Card image">
+    <div class="card-body">
+      <label style=" font-size: 30px; color: thistle;" class="title"><b> Pride and prejudice</label> </label>
+      <br>
+      <label class="author" style="margin-top:4px ;font-size: 19px; color: thistle"> Author : <i>Jane austen</i> </label>
+      <br>
+      <label class="rating" style=" font-size: 18px; color: thistle;"> Rating : <i>4.5</i> </label>
+      <br>
+      <label class="page_count" style=" font-size: 17px; color: thistle;"> Page Count : <i>200</i> </label>
+
+      <p class="description" style="color: thistle;"> Summary :  amazing book blah blah blah </p>
+      <a href="#" class="btn btn-primary" style="margin-top: 5px; background-color: thistle; color: black;"><b>See reviews</b></a>
+    </div>
+    </div> -->
+  </div> 
+ 
+<script src="search_books.js"></script>
+</body>
+</html>
+
+

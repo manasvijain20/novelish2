@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+
+  <title>Novelish</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" href="icon 2 (2).ico">
+</head>
+
+<body>
+  <style>
+    body {
+      background: rgb(248, 235, 255);
+      background: linear-gradient(90deg, rgba(248, 235, 255, 1) 0%, rgba(219, 108, 255, 1) 100%);
+      margin: 0;
+    }
+  </style>
+
+  <center>
+    <nav style="background-color: #600173; padding-top: 10px; padding-bottom: 10px;"
+      class="navbar navbar-expand-sm fixed-top navbar-dark">
+      <h2 id="home_button" onclick="home()" class="	glyphicon glyphicon-home"
+        style="color: white; float: left; padding-left: 10px;"></h2>
+      <span class="glyphicon glyphicon-search" style="color: white;"> </span>
+      <input id="search_book" type="text" class="well-sm" placeholder="Search reviews by book name" style="width: 40%;">
+
+      <button id="test" class="btn navbar-btn" onclick="getData()" style="background-color: black;
+          color: white; font-size: 18px;
+           margin-left: 7px;">GO</button>
+            <script>
+              var input = document.getElementById("search_book");
+              input.addEventListener("keyup", function(event) {
+                if (event.keyCode === 13) {
+                 event.preventDefault();
+                 document.getElementById("test").click();
+                }
+              });
+              </script>
+    </nav>
+    <br>
+  </center>
+
+  <div id="div_img" class="container">
+    <div class="row">
+      <div class="col-sm-4">
+       <div>
+        <img src="images/img4.jpg" width = 40% style="border-radius: 20px; margin-bottom: 12px; margin-left: 220px;"></div>
+       <div> <img src="images/img2.jpg"  width = 40% style="border-radius: 20px; margin-bottom: 12px; margin-left: 220px;"></div>
+      <div> <img src="images/img6.jpg"  width = 40% style="border-radius: 20px; margin-bottom: 12px; margin-left: 220px;"></div>
+      </div>
+
+      <div class="col-sm-4">
+        <img src="images/centre_img.jpeg"  width = 400px style="border-radius: 25px;">
+        <label style="font-family: 'Merienda', cursive;padding-top: 10px; font-size: 22px; color: #600173;" >"A room without books is like a body without a soul."</label>
+     <p style="font-size: 16px; color: #600173;"> - Marcus Tullius Cicero</p>
+      </div>
+
+      <div class="col-sm-4">
+       
+       <div> <img src="images/img5.jpg"  width = 40% style="border-radius: 20px; margin-bottom: 12px;"></div>
+        <div><img src="images/img7.jpg"  width = 40% style="border-radius: 20px; margin-bottom: 12px;"></div>
+       <div> <img src="images/img8.jpg" width = 40% style="border-radius: 20px; margin-bottom: 12px;"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="main"></div>
+  <!-- <div
+        style="margin-left:100px; margin-right:100px; border-radius: 25px;
+         padding-top:10px ;padding-right:25px ;padding-left:25px; padding-bottom:27px;
+          background-color:#600173;" id="review_div">   
+<br>
+      <label style=" font-size: 28px; font-weight:bold; margin-top: 1px; color:thistle; padding-left: 10px;" id="bookname_label"> Book Name </label>
+<br>
+          <label style="font-size: 19px; font-weight:lighter;color:thistle; padding-left: 10px;" id="authorname_label"> Author Name </label>
+<br> 
+          <label id="review_by_user" style="font-size: 17px; font-weight: lighter;padding-left:10px; margin-top: 10px; color: thistle;" > Review </label>
+          <br>
+          <label style=" font-size:15px; color: thistle; margin-top: -20px;
+          padding: 5px; font-size:15px ;padding-left: 10px;" id="username_label" >@username</label> 
+            </div>  -->
+
+
+</body>
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase.js"
+  integrity="sha512-Vu055j4emuBe1fIHqaR0Xlt7CS62im6abpKxGqJi5FOpiVNsNGEfxh037nX9HKvt3n51nEd8VVabB1ui/SRUiA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.7.1/firebase-database.min.js"
+  integrity="sha512-KUzJ1tqJLEOjKAXHxF+b6G+UmxG+big6O30M/EV52xf+j+c8YDFpg1Ha1bgtzbZypVqIsuZlrkOcLt560nf6xQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBuCdqUsoei2qzcBUo62xFsvRKPnrgYjOI",
+    authDomain: "novelish-684fa.firebaseapp.com",
+    databaseURL: "https://novelish-684fa-default-rtdb.firebaseio.com",
+    projectId: "novelish-684fa",
+    storageBucket: "novelish-684fa.appspot.com",
+    messagingSenderId: "670643642627",
+    appId: "1:670643642627:web:4874a397c14e3dea5b0936",
+    measurementId: "G-ZFZM385W36"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  // firebase.analytics();
+  console.log(firebase);
+  // firebase.database().ref('BookReviews/'+"Bookname").set({
+  //    userName:"MANASVI",
+  //  authorName:"jk rowling",
+  //  review:"amazing book!",
+  //  });
+</script>
+<script src="main.js"></script>
+</body>
